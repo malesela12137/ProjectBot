@@ -1,0 +1,35 @@
+Task 1: Connecting to the CLI Host instance
+In this task, you use EC2 Instance Connect to connect to the CLI Host EC2 instance that was created when the lab was provisioned. You will use this instance to run CLI commands.
+
+On the AWS Management Console, in the Search bar, enter and choose EC2 to open the Amazon EC2 Management Console.
+
+In the navigation pane, choose Instances.
+
+From the list of instances, select the  CLI Host instance.
+
+Above the list of instances, choose Connect.
+
+On the EC2 Instance Connect tab, choose Connect.
+
+Note: If you prefer to use an SSH client to connect to the EC2 instance, see the guidance to Connect to Your Linux Instance.
+
+Now that you are connected to the CLI Host instance, you can configure and use the AWS CLI to call AWS services.
+
+ 
+
+Task 2: Configuring the AWS CLI
+In this task, you configure the AWS CLI by providing the configuration parameters that were made available to you when the lab was provisioned. After configuration, you run CLI commands to interact with AWS services.
+
+Note: Amazon Linux Amazon Machine Images (AMIs) already have the AWS CLI preinstalled.
+
+To set up the AWS CLI profile with credentials, run the following command:
+
+aws configure
+Tip: In EC2 Instance Connect, you might need to use the context (right-click) menu to paste values in the terminal. 
+
+When prompted, enter the following information:
+
+AWS Access Key ID: At the top of these instructions, choose Details, and then choose Show. Copy the AccessKey value into the terminal window.
+AWS Secret Access Key: Copy the SecretKey value from the lab instructions into the terminal window.
+Default region name: Copy the LabRegion value from the lab instructions into the terminal window.
+Default output format: Enter json
